@@ -1,0 +1,10 @@
+{{page-title "Tickets"}}
+
+<div>
+  <h1>{{title}}</h1>
+  {{#each this.model as |ticket|}}
+  <Ticket @ticket={{ticket}} />
+  {{/each}}
+</div>
+
+{{outlet}}

@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-sm;
+  background-color: #dbdbdb;
+}
+
+.btn-primary {
+  @apply px-1.5 py-0.5 rounded border-2 border-blue-500 text-blue-500 transition duration-150 hover:bg-blue-500 hover:text-white outline-none focus:outline-none;
+}
+
+.top-bar {
+  @apply h-8 fixed px-2 w-full flex justify-between items-center bg-gray-800 z-50;
+}
+
+.top-bar-input {
+  @apply py-1 pl-6 pr-2  text-xs rounded outline-none focus:outline-none bg-gray-500;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-rows: 2rem 1fr;
+  height: 100vh;
+}
+
+.body-layout {
+  display: grid;
+  grid-template-columns: 4em 260px 1fr;
+  width: 100%;
+}
+
+.pinned-layout {
+  @apply bg-gray-700 z-20 fixed;
+  width: 4em;
+  height: 100vh;
+}
+
+.side-menu-layout {
+  position: relative;
+  max-width: 260px;
+}
+
+.pinned-layout:hover {
+  width: calc(4em + 260px);
+}
+
+.pinned-info {
+  display: none;
+}
+
+.pinned-layout:hover .pinned-info {
+  display: block;
+}
+
+.main-container-layout {
+  @apply p-2;
+}

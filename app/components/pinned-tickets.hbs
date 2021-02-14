@@ -1,0 +1,13 @@
+<div class="pinned-layout py-2 flex flex-col transform easy-in-out duration-75">
+  {{#each this.tickets as | ticket | }}
+  <div class="relative m-1.5 h-11 rounded hover:bg-gray-500 flex text-white cursor-pointer hover:shadow-2xl">
+    <div class="relative w-11 h-11 p-1">
+      <img class=" rounded-full h-08  mx-auto" src="/avatar.png" alt="">
+      <span class="w-4 h-4 border-4 border-gray-700 bg-red-500 rounded-full absolute right-0 bottom-0 m-0.5"></span>
+    </div>
+    <div class="my-auto mx-2 pinned-info transition delay-150 duration-300 ease-in-out">
+      <h4 class="text-sm">{{ticket}}</h4>
+    </div>
+  </div>
+  {{/each}}
+</div>

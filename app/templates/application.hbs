@@ -1,7 +1,20 @@
-{{page-title "HappyfoxEmberjs"}}
+{{page-title "Happyfox"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<div class="page-layout">
+  <div class="top-bar-layout">
+    <TopBar />
+  </div>
 
-{{outlet}}
+  <div class="body-layout">
+    <div>
+
+      <PinnedTickets />
+    </div>
+    <div class="side-menu-layout">
+      <SideMenu />
+    </div>
+    <div class="main-container-layout">
+      {{outlet}}
+    </div>
+  </div>
+</div>
